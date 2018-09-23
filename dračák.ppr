@@ -1,0 +1,33 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.CompileOnBackground=0
+Compilator.ProgSaveAll=1
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=C:\Users\Jan\Documents\GitHub\HonzaLed.github.io
+DefaultCP=65001
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=https://honzaled.github.io
+Extensions=*.*
+[Project tree]
+draèák
+	-HonzaLed.github
+		index.html
+		script.js
+[Open project files]
+0=script.js
+1=index.html
+[Selected Project Files]
+Main=
+Selected=index.html
+[script.js]
+TopLine=17
+Caret=1,1
+[index.html]
+TopLine=1
+Caret=1,1
