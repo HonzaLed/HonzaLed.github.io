@@ -29,7 +29,7 @@ alert("Hrajete betaverzi hry ´Draèák´, Autor: Jan Ledvina");
 
         const materialNormal = new BABYLON.StandardMaterial("material-normal", scene);
 
-        materialNormal.diffuseColor = new BABYLON.Color3.FromHexString("#15ead5");//Také bych mohl vyrobit barvu z hexadecimálního zápisu BABYLON.Color3.FromHexString("#666666");
+        materialNormal.diffuseColor = new BABYLON.Color3.FromHexString("#3d2419");//Také bych mohl vyrobit barvu z hexadecimálního zápisu BABYLON.Color3.FromHexString("#666666");
 
 
 
