@@ -1,21 +1,33 @@
-const store = Redux.createStore(stateReducer, defaultState);
-
-var canvas = document.getElementById("scene");
-var engine = new BABYLON.Engine(canvas, true);
-var scene = createScene(canvas, engine);
+const store = Redux.createStore(wrapReducer(stateReducer), createStateFromUri(document.location.toString()));
+const root = document.getElementById("root");
+const canvas = document.getElementById("scene");
+const engine = new BABYLON.Engine(canvas, true);
+const scene = createScene(canvas, engine, store);
+engine.runRenderLoop(function () {
+    scene.render();
+});
+window.addEventListener("resize", function () {
+    engine.resize();
+});
 
 function render() {
     updateScene(scene, store.getState());
 }
+store.subscribe(()=> {
+    const state = store.getState();
+    if (state.lastAction.type !== 'CHANGE_STATE') {
+        const uri = createUriFromState(state);
+        const title = createTitleFromState(state);
+        document.title = title;
+        history.pushState({}, title, uri);
+    }
+});
+
 
 store.subscribe(render);
 render();
 
-engine.runRenderLoop(function () {
-    scene.render();
-});
-
-// Resize
-window.addEventListener("resize", function () {
-    engine.resize();
-});
+window.onpopstate = function () {
+    const state = createStateFromUri(document.location.toString());
+    store.dispatch(createAction.CHANGE_STATE(state));
+};
