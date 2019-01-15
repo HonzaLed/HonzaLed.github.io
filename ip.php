@@ -5,3 +5,5 @@ $text = $_GET["ip"]
 fwrite($soubor, $text);
 fclose($soubor);
 ?>
+<body>
+  <p>uloženo>/p></body>
