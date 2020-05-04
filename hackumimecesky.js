@@ -5,5 +5,5 @@ $(".option0").trigger("click");
 else{
 $(".option1").trigger("click");
 }}
-window.setInterval(pressCorrect(), 2000)
+a = window.setInterval(pressCorrect(), 2000)
 
