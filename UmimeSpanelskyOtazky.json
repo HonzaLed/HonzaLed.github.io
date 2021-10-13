@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "id": "147852369",
+      "question": [
+        [
+          "text",
+          "¿Cómo te l_amas?"
+        ]
+      ],
+      "options": [
+        {
+          "option": [
+            [
+              "text",
+              "j"
+            ]
+          ],
+          "correct": 0
+        },
+        {
+          "option": [
+            [
+              "text",
+              "l"
+            ]
+          ],
+          "correct": 1
+        }
+      ],
+      "explanation": [
+        [
+          "text",
+          "¿Cómo te llamas? se píše se llamas, ale čte se [ljamas]"
+        ]
+      ],
+      "translation": [
+        [
+          "text",
+          "Jak se jmenuješ?"
+        ]
+      ],
+      "rs": "305",
+      "difficultyRank": "1",
+      "medianResponseTime": "1950"
+    },
+    {
+      "id": "147852369",
+      "question": [
+        [
+          "text",
+          "¿De donde eres?"
+        ]
+      ],
+      "options": [
+        {
+          "option": [
+            [
+              "text",
+              "Jak se máš?"
+            ]
+          ],
+          "correct": 0
+        },
+        {
+          "option": [
+            [
+              "text",
+              "Odkud jsi?"
+            ]
+          ],
+          "correct": 1
+        }
+      ],
+      "explanation": [
+        [
+          "text",
+          "¿De donde eres? znamená Odkud jsi?"
+        ]
+      ],
+      "translation": [
+        [
+          "text",
+          "Co znamená"
+        ]
+      ],
+      "rs": "305",
+      "difficultyRank": "1",
+      "medianResponseTime": "3950"
+    }
+  ]
+}
